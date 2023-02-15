@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    
+    <title>Weather site</title>
+  </head>
+  <body class="body">
+    
+
+    <header>
+        
+    <h1 style="text-align: center;"><img src="Images/logo.jpg" alt="logo" width="60px" style="vertical-align: middle;">&nbsp;&nbsp;YONDER</h1>
+    <p style="text-align: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Shows Real Time Data from any City in the World</p>
+    </header>
+    <div class="cont-1">
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <div class="search">
+        <input type="text" placeholder="Search..." id="in"/>
+        <button onclick="search()">Search</button>
+        <a href="#">
+          <i class="fast"></i>
+        </a>
+      </div>
+
+      <div class="cont-2">
+        <div class="items">
+            <span style="text-align: center;font-weight: 900;font-size: 250%;" ><p id="tempo">RAMPUR</p></span>
+          <h1 style="font-size: 300%; text-align: center" >
+            <p id="temp">25°C</p>
+            
+          </h1>
+
+          
+          <div class="box-1">
+            <span style="font-size: 125%;font-weight: 500;"> Later Today</span>
+
+            <div class="box-8">
+              <div class="hours">
+                <span
+                  style="text-align: center; font-size: 110%; font-weight: 500"
+                  >Now</span
+                ><br />
+                <div class="bakza">
+                  
+                  <div class="bakzaite" id="desc0">"Clear"</div>
+                  <div class="bakzaite" id="temp0">Temp :- 25°C </div>
+                </div>
+              </div>
+              <div class="hours">
+                <span
+                  style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+1 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc1">"Clear"</div>
+                    <div class="bakzaite" id="temp1">Temp :- 25.3°C</div>
+                  </div>
+                
+              </div>
+              <div class="hours">
+                <span
+                  style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+2 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc2">"Clear"</div>
+                    <div class="bakzaite" id="temp2">Temp :- 25.7°C</div>
+                  </div>
+
+
+              </div>
+              <div class="hours">
+                <span
+                  style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+3 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc3">"Overcast"</div>
+                    <div class="bakzaite" id="temp3">Temp :- 24°C</div>
+                  </div>
+
+
+              </div>
+              <div class="hours">
+                <span
+                  style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+4 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc4">"Clear"</div>
+                    <div class="bakzaite" id="temp4">Temp :- 25.4°C</div>
+                  </div>
+
+
+              </div>
+              <div class="hours">
+                <span
+                style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+5 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc5">"Clear"</div>
+                    <div class="bakzaite" id="temp5">Temp :- 26°C</div>
+                  </div>
+                
+
+              </div>
+              <div class="hours">
+                <span
+                style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+6 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc6">"Clear"</div>
+                    <div class="bakzaite" id="temp6">Temp :- 25.9°C</div>
+                  </div>
+              </div>
+              <div class="hours">
+                <span
+                style="text-align: center; font-size: 110%; font-weight: 500"
+                  >+7 Hr</span><br>
+                  <div class="bakza">
+                    
+                    <div class="bakzaite" id="desc7">"Cloudy"</div>
+                    <div class="bakzaite" id="temp7">Temp :- 24.9°C</div>
+                  </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="box-2">
+            <span style="font-size: 125%; font-weight: 500;">NEXT 3 DAYS</span>
+            <div class="box-9">
+                <div class="days">
+                    <div class="bakza-2">
+                        <div class="bakzaite-2" id="date0">"2023-02-15"</div>
+                        <div class="bakzaite-2" id="des0">"Sunny"</div>
+                        <div class="bakzaite-2" id="Mtemp0">Max Temp:- 32°C</div>
+                        <div class="bakzaite-2" id="mtemp0">Min Temp:- 22°C</div>
+                    </div>
+                    
+                </div>
+                <div class="days">
+                    <div class="bakza-2">
+                        <div class="bakzaite-2" id="date1">"2023-02-16"</div>
+                        <div class="bakzaite-2" id="des1">"Sunny"</div>
+                        <div class="bakzaite-2" id="Mtemp1">Max Temp - 35°C</div>
+                        <div class="bakzaite-2" id="mtemp1">Min Temp:- 24°C</div>
+                    </div>
+
+                </div>
+                <div class="days">
+                    <div class="bakza-2">
+                        <div class="bakzaite-2" id="date2">"2023-02-17"</div>
+                        <div class="bakzaite-2" id="des2">"Cloudy"</div>
+                        <div class="bakzaite-2" id="Mtemp2">Max Temp:- 30°C</div>
+                        <div class="bakzaite-2" id="mtemp2">Min Temp:- 20°C</div>
+                    </div>
+
+                </div>
+                
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <h1 style="text-align: center;font-size: 220%;">DETAILS</h1>
+          <div class="box-3">
+            <div class="boxitem">
+              <span style="font-size: 125%; text-align: center; color: #fbe0c4;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                SUN</span>
+                <div class="box-10">
+                    <div class="suraj" id="sunrise">Sun Rise Time:- "07:02 AM"</div>
+                    <div class="suraj" id="sunset">Sun Set Time:- "06:07 PM"</div>
+                </div>
+              
+
+            </div>
+            <div class="boxitem">
+              <span style="font-size: 125%; text-align: center;color: #fbe0c4;"
+                >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MOON</span
+              >
+              <div class="box-11">
+                <div class="chand" id="moonphase">Moon Cycle Phase :- "Half"</div>
+                <div class="chand" id="moonrise">Moon Rise Time:- "01:13 AM"</div>
+                <div class="chand" id="moonset">Moon Set Time:- "11:52 AM"</div>
+
+              </div>
+
+            </div>
+          </div>
+          <div class="box-4">
+            <p>
+              <span
+                style="font-weight: 500; font-size: 125%; text-align: center"
+              ><h2>AQI :- <div id="AQI">114</div
+                ></h2>
+                </span>
+            </p>
+            <div class="box-5">
+              <div class="boxite" id="CO">CO :-1032.23ppm</div>
+              <div class="boxite" id="NO2">NO2:- 32.3ppm</div>
+              <div class="boxite" id="O3">O3:- 52.34ppb</div>
+              <div class="boxite" id="PM10">PM10:- 152.69ug/m3</div>
+              <div class="boxite" id="SO2">SO2:- 13.21ppb</div>
+            </div>
+
+            <h2 style="text-align: center">Miscellaneous</h2>
+            <div class="box-6">
+              <div class="boxite" id="max_temp">Max Temp :- 32°C</div>
+              <div class="boxite" id="min_temp">Min Temp :- 22°C</div>
+            </div>
+            <div class="box-7">
+              <div class="boxite" id="humidity">Humidity :-34%</div>
+              <div class="boxite" id="wind_speed">Wind Speed :- 23.7 Km/h</div>
+              <div class="boxite" id="wind_degrees">Wind Degrees :- 320° "N"</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+    <!--<script src="script.js"></script>-->
+    
+    
+    <script src="script3.js"></script>
+    <!--<script src="script4.js"></script>
+    <script src="script2.js"></script>-->
+    
+  </body>
+</html>
